@@ -2,9 +2,9 @@ package Questions;
 
 import java.util.TreeMap;
 
-public class RomanNumber {
+public class NumberToRoman {
 
-    private final static TreeMap<Integer, String> map = new TreeMap<Integer, String>();
+    private final static TreeMap<Integer, String> map = new TreeMap<>();
 
     static {
 
