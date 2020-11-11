@@ -2,7 +2,7 @@ package Questions;
 
 public class ReverseInt {
 
-    public static int reverse(int x) {
+    public int reverse(int x) {
         String stringNum = String.valueOf(x);
         StringBuilder stringResult = new StringBuilder();
         for (int i = stringNum.length() - 1; i >= 0; i--) {
@@ -35,10 +35,5 @@ public class ReverseInt {
         System.out.println("tens " + tens);
         String temp = "" + tens + hundreds;
         int results = Integer.parseInt(temp);*/
-    }
-
-    public static void main(String[] args) {
-        System.out.println(reverse(-125));
-        //521
     }
 }
