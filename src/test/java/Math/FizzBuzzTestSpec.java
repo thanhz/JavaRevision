@@ -1,4 +1,6 @@
-import Questions.FizzBuzz;
+package Math;
+
+import Questions.Math.FizzBuzz;
 import org.junit.Test;
 
 import java.util.Arrays;

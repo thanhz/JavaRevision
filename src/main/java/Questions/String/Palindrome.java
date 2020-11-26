@@ -1,4 +1,4 @@
-package Questions;
+package Questions.String;
 
 public class Palindrome {
 

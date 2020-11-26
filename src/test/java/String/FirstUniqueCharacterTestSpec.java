@@ -1,4 +1,6 @@
-import Questions.FindFirstUniqueCharacter;
+package String;
+
+import Questions.String.FindFirstUniqueCharacter;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

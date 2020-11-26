@@ -1,4 +1,4 @@
-package Questions;
+package Questions.Math;
 
 import java.util.TreeMap;
 

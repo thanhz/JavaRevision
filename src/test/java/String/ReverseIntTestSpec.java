@@ -1,6 +1,8 @@
+package String;
+
 import static org.junit.Assert.*;
 
-import Questions.ReverseInt;
+import Questions.String.ReverseInt;
 import org.junit.Test;
 
 public class ReverseIntTestSpec {

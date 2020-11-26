@@ -1,4 +1,6 @@
-import Questions.RomanToInt;
+package Math;
+
+import Questions.Math.RomanToInt;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

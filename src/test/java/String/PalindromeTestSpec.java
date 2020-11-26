@@ -1,4 +1,6 @@
-import Questions.Palindrome;
+package String;
+
+import Questions.String.Palindrome;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

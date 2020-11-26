@@ -1,4 +1,6 @@
-import Questions.ReverseString;
+package String;
+
+import Questions.String.ReverseString;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

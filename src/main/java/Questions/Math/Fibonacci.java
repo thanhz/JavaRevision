@@ -1,4 +1,4 @@
-package Questions;
+package Questions.Math;
 //The Fibonacci sequence is a set of numbers that starts with a one or a zero, followed by a one,
 // and proceeds based on the rule that each number (called a Fibonacci number) is equal to the sum of the preceding two numbers
 public class Fibonacci {
