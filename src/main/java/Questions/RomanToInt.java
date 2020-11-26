@@ -4,11 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RomanToInt {
-    public static void main(String[] args) {
-        System.out.println(romanToInt("IV"));
-    }
 
-    public static int romanToInt(String s) {
+    public int romanToInt(String s) {
         Map<Character, Integer> romans = new HashMap<>();
         romans.put('I', 1);
         romans.put('V', 5);
@@ -23,8 +20,8 @@ public class RomanToInt {
         for (int i = 0; i < s.length(); i++) {
             int current = romans.get(s.charAt(i));
 
-            if (i+1 < s.length()) {
-                int next = romans.get(s.charAt(i+1));
+            if (i + 1 < s.length()) {
+                int next = romans.get(s.charAt(i + 1));
                 if (current >= next) {
                     total += current;
                 } else {
