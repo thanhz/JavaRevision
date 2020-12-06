@@ -1,23 +1,13 @@
 package Questions.String;
 
 public class ReverseInt {
-
     public int reverse(int x) {
-        String stringNum = String.valueOf(x);
-        StringBuilder stringResult = new StringBuilder();
-        for (int i = stringNum.length() - 1; i >= 0; i--) {
-            char current = stringNum.charAt(i);
-            if (stringNum.charAt(i) == '-') {
-                stringResult.insert(0, '-'); //Append - to the beginning
-            } else {
-                stringResult.append(current);
-            }
-        }
-
-        long reversed = Long.parseLong(stringResult.toString());
-        if (reversed > Integer.MAX_VALUE || reversed < Integer.MIN_VALUE) {
+        String reversed = new StringBuilder().append(Math.abs(x)).reverse().toString();
+        try {
+            return (x < 0) ? Integer.parseInt(reversed) * -1 : Integer.parseInt(reversed);
+        } catch (NumberFormatException e) {
             return 0;
-        } else return Math.toIntExact(reversed);
+        }
     }
 
     public int reverse2(int input) {
@@ -31,4 +21,5 @@ public class ReverseInt {
         }
         return reversed;
     }
+
 }

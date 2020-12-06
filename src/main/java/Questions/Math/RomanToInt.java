@@ -15,23 +15,14 @@ public class RomanToInt {
         romans.put('D', 500);
         romans.put('M', 1000);
 
-        int total = 0;
-
+        int result = 0;
         for (int i = 0; i < s.length(); i++) {
-            int current = romans.get(s.charAt(i));
-
-            if (i + 1 < s.length()) {
-                int next = romans.get(s.charAt(i + 1));
-                if (current >= next) {
-                    total += current;
-                } else {
-                    total += (next - current);
-                    i++;
-                }
+            if (i > 0 && romans.get(s.charAt(i)) > romans.get(s.charAt(i - 1))) {
+                result += romans.get(s.charAt(i)) - romans.get(s.charAt(i - 1)) * 2;
             } else {
-                total += current;
+                result += romans.get(s.charAt(i));
             }
         }
-        return total;
+        return result;
     }
 }
